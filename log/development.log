@@ -68,3 +68,43 @@ Served asset /application.js - 200 OK (7ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 23:49:52 +0200
 Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-09 01:51:45 +0200
+Served asset /rails.png - 304 Not Modified (3ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2013-03-09 01:51:49 +0200
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/bundle/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/bundle/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /Users/aromasca/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:147:in `handle'
+  /Users/aromasca/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:99:in `rescue in block (2 levels) in start'
+  /Users/aromasca/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:96:in `block (2 levels) in start'
+  /Users/aromasca/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:86:in `each'
+  /Users/aromasca/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:86:in `block in start'
+  /Users/aromasca/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:66:in `loop'
+  /Users/aromasca/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:66:in `start'
+  /Users/aromasca/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:13:in `run'
+  /Users/aromasca/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-03-09 01:51:59 +0200
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb (4.2ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
